@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0DED1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_centerInParent="true"/>
+
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:resize_mode="fill"
+        app:use_controller="false" />
+
+
+
+    <TextView
+        android:id="@+id/reelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:paddingTop="4dp"
+        android:text="Food Name"
+        android:fontFamily="@font/almendra"
+        android:textColor="#986E2A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+       android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/playerView"
+        app:layout_constraintTop_toBottomOf="@id/playerView" />
+
+    <!-- Location -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/reelTitle"
+        app:layout_constraintTop_toBottomOf="@id/reelTitle"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/location_pin_alt_svgrepo_com"
+            />
+        <TextView
+            android:id="@+id/reelLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="Location Name"
+            android:fontFamily="@font/almendra"
+            android:textColor="#775656"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/reelTitle"
+            app:layout_constraintTop_toBottomOf="@id/reelTitle" />
+
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/bookmark_svgrepo_com__1_"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <!-- Crave & Order Button -->
+    <Button
+        android:id="@+id/craveOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#470707"
+        android:fontFamily="@font/almendra_bold"
+        android:text="Crave and Order"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerView" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
