@@ -25,6 +25,12 @@ FoodieReel App allows users to explore short food reels and discover nearby food
 <img src="https://github.com/user-attachments/assets/2d63125e-41d3-41bb-b080-7d4c6f0d9acb" alt="Map View" width="300" height="600>
 
 
+
+
+
+
+
+
 ## 🏗️ Installation & Setup
 
 1. **Clone the Repository**
