@@ -32,7 +32,8 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDl5cYPZc04mQkxhD9AzkdyIMGVEor0PQM"/>
+            android:value="YOUR_API_KEY"/>
+        // restricted to personal use 
     </application>
 
 
