@@ -1,4 +1,4 @@
-# Food Reels App
+# FoodieRee App
 
 ## 📌 Overview
 
@@ -30,3 +30,21 @@ FoodieReel App allows users to explore short food reels and discover nearby food
    ```bash
    git clone https://github.com/yourusername/FoodReelsApp.git
    cd FoodReelsApp
+2. **Add Google Maps API Key**
+   - **Get an API key from Google Cloud Console.**
+   - **Add it in AndroidManifest.xml**
+    ```bash
+   <meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+
+## 📝 License
+- **This project is licensed under the MIT License.**
+
+## 🤝 Contributing
+- **Feel free to fork this repository and contribute to the project.**
+
+
+
+   
+
