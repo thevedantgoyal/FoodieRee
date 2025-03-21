@@ -9,7 +9,6 @@ FoodieReel App allows users to explore short food reels and discover nearby food
 - 🎥 **Short Food Reels** - Scrollable video reels with food details.
 - 📍 **Location Detection** - Automatically fetches the user's current location.
 - 🍔 **Nearby Food Spots** - Displays food places within a 10km radius.
-- 🗺️ **Google Maps Integration** - Shows food spots on a map with custom markers.
 - ⚡ **ExoPlayer for Video Playback** - Smooth and efficient video streaming.
 
 ## 🛠️ Tech Stack
